@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%--------------- Header (centered) --------------- 
+\begin{center}
+  {\Large \textbf{Sai Sindhu Bhimavarapu}} \\
+  Toronto, Canada \\
+  +1-902-977-0490 \enspace | \enspace sindhu10988@gmail.com \enspace | \enspace \href{https://www.linkedin.com/in/sindhu1098/}{linkedin.com/in/sindhu1098} \enspace | \enspace \href{https://github.com/si-ndhu}{github.com/si-ndhu}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Results-driven \textbf{Full-Stack Software Engineer} with 5+ years of experience building end-to-end, cloud-native web applications and backend services, specializing in designing and maintaining \textbf{high-performance ETL pipelines} and scalable HTTP services for high-traffic environments. Skilled in \textbf{Java 17+}, \textbf{Spring Boot}, \textbf{Spring WebFlux}, and infrastructure-as-code using \textbf{Terraform}, \textbf{Docker}, and \textbf{Kubernetes}. Experienced with NoSQL databases such as \textbf{DynamoDB}, \textbf{Redis}, and \textbf{MongoDB}, and observability tools like \textbf{Micrometer} and \textbf{Datadog}. Proven ability to optimize distributed system architectures in cloud-native environments and maintain 24/7 system reliability at global organizations including \textbf{TD Bank}, \textbf{Microsoft}, and leading tech firms.  
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Java 17+, Python, C++, C\#, SQL, Bash, PowerShell \\
+     \textbf{Backend and Frameworks}: Spring Boot, Spring WebFlux, Spring MVC, Node.js, RESTful APIs, Microservices Architecture \\
+     \textbf{Frontend}: React, JavaScript, HTML/CSS \\
+     \textbf{Databases}: DynamoDB, ElastiCache (Redis), Apache Cassandra, MongoDB, PostgreSQL, MySQL, Oracle, MSSQL \\
+     \textbf{Cloud Platforms}: AWS (EC2, Lambda, S3, CloudFormation, DynamoDB), Azure (DevOps, Data Factory, AKS), GCP \\
+     \textbf{DevOps and Tools}: Terraform, Docker, Kubernetes, Jenkins, Git, GitHub Actions, Azure DevOps, CI/CD Pipelines \\
+     \textbf{Observability and Monitoring}: Micrometer, Datadog, Application Performance Monitoring, Log Aggregation \\
+     \textbf{Data Streaming}: Apache Kafka, Real-time Data Processing, Event-driven Architecture \\
+     \textbf{Testing and QA}: JUnit, Cucumber, Postman, TDD/BDD, Automated and Performance Testing \\
+     \textbf{Development Practices}: Agile/Scrum, Code Reviews, System Design, Scalability Optimization, On-call Support, Incident Response
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Software Engineer}}{\textbf{Oct 2024 -- Present}}
+      {\textbf{Wipro Technologies (TD Bank)}}{Toronto, Canada}
+      \resumeItemListStart
+        \resumeItem{Implemented robust Python and SQL validation scripts in Azure Data Notebooks to verify incoming data from fraud detection ETL pipelines, significantly improving data quality and \textbf{system reliability}.}
+        \resumeItem{Automated regression and functional testing by developing Java-based test suites using Cucumber, Selenium, and BDD practices, reducing manual testing effort by 40\% and increasing feature reliability.}
+        \resumeItem{Built and maintained fraud monitoring workflows leveraging large-scale transactional datasets and third-party tools such as OFSAA, enabling rapid detection, case creation, and tracking of suspicious financial transactions.}
+        \resumeItem{Designed and optimized complex SQL queries for data-intensive workflows, collaborating in Agile teams to ensure scalable backend services and timely delivery of high-quality releases.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Senior Data Engineer}}{\textbf{Dec 2023 -- Apr 2024}}
+      {\textbf{LTI Mindtree LTD (Microsoft)}}{Calgary, Canada}
+      \resumeItemListStart
+        \resumeItem{Drove quality improvements for \textbf{Azure Cognitive Services} by testing new features using SDKs, REST APIs, and Azure AI studio, \textbf{enhancing performance and stability} of cloud-native services.}
+        \resumeItem{Streamlined code testing, database analysis, and container-based workflows utilizing Jupyter, Postman, Visual Studio, Java, Python, C\#, and Kusto queries, improving \textbf{product observability} and reliability.}
+        \resumeItem{Pioneered training, evaluation, and optimization of OpenAI GPT models on Azure OpenAI, achieving a 25\% improvement in performance metrics and reducing latency for real-time workloads through benchmarking and configuration tuning.}
+        \resumeItem{Collaborated with cross-functional teams on new \textbf{AI capabilities}, contributing to scalable, production-ready cognitive and LLM-based services for enterprise usage.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {\textbf{Software Development Engineer Co-op}}{\textbf{Jan 2024 -- Apr 2024}}
+      {\textbf{ESO}}{Halifax, Canada}
+      \resumeItemListStart
+        \resumeItem{Rapidly gained proficiency in XSLT, XML, C\#, C++, and Azure cloud services within a complex codebase to independently own sprint stories and production bug fixes.}
+        \resumeItem{Leveraged Pluralsight and mentorship to introduce refactoring and code-quality improvements, boosting development velocity by 10--15\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Software Engineer}}{\textbf{Jan 2022 -- Aug 2022}}
+      {\textbf{People Tech Group Private Ltd.}}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Led development of haptic feedback features for Cadillac vehicles from concept to integration, aligning UX with safety and brand requirements.}
+        \resumeItem{Developed interactive React frontend application integrated with backend APIs, delivering responsive user experience and collaborating on automotive configuration visualizations.}
+        \resumeItem{Designed and validated haptics functionality on prototype hardware, assuring vibration pattern reliability for real-world driving scenarios.}
+        \resumeItem{Contributed to infotainment UI and interaction workflows using Qt, Rhapsody, WeCAN, and C++, enhancing responsiveness and reliability.}
+        \resumeItem{Implemented \textbf{CI/CD pipelines} for automotive software using Jenkins, SourceTree, and Bitbucket, automating builds and reducing deployment cycle time and integration issues.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Software Engineer II}}{\textbf{Sep 2018 -- Jan 2022}}
+      {\textbf{Verisk Analytics}}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Developed next-generation analytical models and core components with Java, C\#, Python, and C++, achieving 40\% performance improvements across critical business models.}
+        \resumeItem{Built a Python tool to convert large model data into optimized binary formats, reducing file sizes by 90\% and significantly improving load and processing times.}
+        \resumeItem{Diagnosed and resolved complex production issues including memory leaks and performance bottlenecks through root-cause analysis and profiling.}
+        \resumeItem{Applied \textbf{Lean Six Sigma} practices to improve engineering workflows and reduce development waste.}
+        \resumeItem{Mentored new hires and led a team of three engineers as \textbf{Scrum Master}, guiding Agile delivery and strengthening engineering culture.}
+        \resumeItem{Collaborated with Product Management and Research to deliver scalable, high-performance solutions optimized for reliability and maintainability.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Applied Computer Science}{Sep 2022 -- Apr 2024}
+      {Dalhousie University, Halifax, Canada}{GPA: 4.0/4.3}
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering}{Aug 2015 -- May 2019}
+      {GRIET, Hyderabad, India}{GPA: 9.9/10}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Cart Pool} -- \emph{React, Node.js, Express, Jest, JWT}}{Full-Stack Web Application}
+          \resumeItemListStart
+            \resumeItem{Led the development of a full-stack web application enabling peer-to-peer delivery of daily essentials at the lowest delivery costs, resulting in increased accessibility for users.}
+            \resumeItem{Designed an intuitive frontend interface using React, Bootstrap, and CSS, enhancing user engagement and satisfaction.}
+            \resumeItem{Built a robust and scalable backend with Node.js and Express, ensuring seamless integration and performance.}
+            \resumeItem{Achieved 100\% test coverage through rigorous Jest testing and Test-Driven Development (TDD), significantly reducing potential bugs.}
+            \resumeItem{Implemented secure JWT-based authentication and adhered to SOLID principles and clean code practices, improving maintainability and scalability by 40\%.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Expense Tracker} -- \emph{AWS EC2, Lambda, S3, DynamoDB, API Gateway, SNS, CloudFormation}}{Cloud-Based Solution}
+          \resumeItemListStart
+            \resumeItem{Developed an expense tracking solution using AWS EC2, Lambda, S3, DynamoDB, API Gateway, SNS, and CloudFormation services.}
+            \resumeItem{Enhanced expense monitoring by integrating Amazon Textract for intelligent data extraction from uploaded receipts, reducing manual input errors by 50\%.}
+            \resumeItem{Automated notifications for users by developing Python Lambda scripts, extracting information and triggering alerts through SNS, boosting user efficiency.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{PowerGrid Restoration} -- \emph{Java, JUnit, Data Structures, Algorithms}}{Disaster Response Simulation}
+          \resumeItemListStart
+            \resumeItem{Contributed to a simulation project addressing Hurricane Fiona's aftermath, enabling more efficient disaster response planning in Atlantic Canada.}
+            \resumeItem{Developed core restoration algorithms in Java, validated with JUnit, ensuring reliability and accuracy in power restoration sequencing.}
+            \resumeItem{Applied advanced data structures and algorithms to optimize restoration routes, reducing recovery times by 35\%.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\end{document}
