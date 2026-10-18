@@ -1,0 +1,105 @@
+\begin{document}
+
+%--------------- Header (centered) ---------------
+\begin{center}
+  {\Large \textbf{Arumalla Mohit Krishna}} \\
+  New York, USA \\
+  +1-631-352-8643 \enspace | \enspace mohitkrishna.arumalla@stonybrook.edu \enspace | \enspace \href{https://www.linkedin.com/in/mohit-krishna-arumalla}{linkedin.com/in/mohit-krishna-arumalla}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software Engineer} with 2+ years of experience designing and developing \textbf{high-quality software solutions} with expertise in \textbf{Go}, \textbf{Java}, and \textbf{TypeScript}. Skilled in building scalable distributed systems, \textbf{gRPC microservices}, and real-time data pipelines. Strong foundation in \textbf{object-oriented design}, debugging complex issues, and collaborating in agile environments. Currently pursuing an MS in Computer Science at \textbf{Stony Brook University}.
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Go, Java, TypeScript, Python, C/C++ \\
+     \textbf{Backend and Systems}: Microservices, gRPC, RESTful APIs, FastAPI, Node.js \\
+     \textbf{Distributed Systems}: Apache Flink, Kafka, CDC, Airflow, Raft, Paxos \\
+     \textbf{Databases and Storage}: PostgreSQL, Elasticsearch, Redis, RocksDB, BigQuery \\
+     \textbf{Cloud and Infrastructure}: AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD, Istio/Envoy \\
+     \textbf{Testing and Debugging}: Automated testing (unit, integration, functional), debugging complex distributed services \\
+     \textbf{Frontend and AI Tools}: TypeScript, React basics, AI tooling integration for platform enhancements
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science}{Aug 2025 -- Dec 2026}
+      {Stony Brook University, New York, USA}{}
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics and Communication}{Aug 2019 -- 2023}
+      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Software Engineer II}}{\textbf{Apr 2024 -- Aug 2025}}
+      {\textbf{Infra.Market}}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a real-time CDC pipeline using Apache Flink, Kafka, Debezium, RocksDB, PostgreSQL, and Elasticsearch delivering high reliability and exactly-once semantics with latencies under 500 ms.}
+        \resumeItem{Built semantic product search with Amazon Titan Text Embeddings and Elasticsearch vector search for enhanced product discovery and user experience.}
+        \resumeItem{Deployed and maintained an Istio/Envoy \textbf{service mesh} for 15+ microservices, enabling observability and facilitating fault isolation and tracing via New Relic.}
+        \resumeItem{Collaborated closely with cross-functional teams to align engineering efforts with product vision and technical requirements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Software Engineer I}}{\textbf{Jul 2023 -- Mar 2024}}
+      {\textbf{Infra.Market}}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Owned the development of Search and Location microservices using gRPC, processing over 500K daily requests for product discovery and geolocation.}
+        \resumeItem{Led troubleshooting and debugging efforts to resolve PostgreSQL connection leaks, reducing service downtime and improving reliability by 85\%.}
+        \resumeItem{Enhanced frontend performance with lazy loading and memoization, improving core web vitals and user engagement metrics significantly.}
+        \resumeItem{Developed automated Apache Airflow pipelines for migrating and optimizing data synchronization between BigQuery and Elasticsearch in production environments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{CodeLens} -- \emph{Python, Elasticsearch, PyTorch}}{Sept 2026}
+          \resumeItemListStart
+            \resumeItem{Built a repository-aware RAG service mapping errors and stack traces to source locations using Tree-sitter, hybrid BM25/vector retrieval, and LLM explanations with commit-specific file and line citations.}
+            \resumeItem{Fine-tuned a cross-encoder reranker on query-code pairs and hard negatives, using Weights \& Biases Sweeps for hyperparameter tuning and logging of loss, ranking metrics, and checkpoints.}
+            \resumeItem{Implemented incremental Git indexing, FastAPI serving, and Redis caching; evaluated Recall@10, MRR@10, citation correctness, and p95 latency.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Scalable Distributed Banking System} -- \emph{Go, gRPC, Redis, Permissioned Blockchain}}{Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a fault-tolerant banking platform in Go using Linear PBFT consensus, RSA signatures, and SHA-256 hashing to preserve transaction integrity under Byzantine failures.}
+            \resumeItem{Designed a replicated sharded architecture (12 servers, 30,000-key datastore) with cross-shard atomic transactions via Two-Phase Commit (2PC), handling up to 8,000 TPS.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Attention-Based Hallucination Detection in NMT} -- \emph{Python, PyTorch, mBART}}{Dec 2025}
+          \resumeItemListStart
+            \resumeItem{Built an English--German hallucination detection pipeline using mBART attention features (WMT22/WMT23): entropy, attention mass, grounding ratios.}
+            \resumeItem{Trained token-, sentence-, and head-level classifiers on 50K WMT examples, achieving 0.712 F1 and 0.695 ROC-AUC.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+    \resumeSubHeadingListEnd
+
+\end{document}
